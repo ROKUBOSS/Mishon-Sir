@@ -8,14 +8,19 @@
 <style>
 * {
 box-sizing: border-box;
+padding: 0%;
+margin: 0%;
 }
 body{
 background-image: linear-gradient(red,yellow,brown);
 }
+input{
+    display: inline-block;
+}
 
 .menu {
 float: left;
-width: 10%;
+width: 20%;
 text-align: center;
 }
 
@@ -24,6 +29,7 @@ background-image: linear-gradient(red,yellow,brown);
 padding: 8px;
 font-size: 20px;
 margin-top: 7px;
+text-decoration: none;
 display: block;
 width: 100%;
 color: black;
@@ -31,25 +37,41 @@ color: black;
 
 .main {
 float: left;
-width: 80%;
-padding: 0 20px;
-/* background-color: brown; */
+width: 60%;
+padding: 0px 20px;
 }
 
 .right {
 
 float: left;
-width: 10%;
+width: 20%;
 padding: 15px;
 margin-top: 7px;
-text-align: center;
+}
+.right a{
+color:darkblue;
+margin-top: 10px;
+text-align: left;
 }
 
 
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
-.menu, .main, .right {
+.collapsible,.menu,.main,.right,.pic{
 width: 100%;
+}
+.right a {
+color: wheat;
+}
+.content table,tr,th,td {
+color: wheat;
+border: 1px solid gold;
+width: 100%;
+padding: 3px;
+margin: 3px;
+font-size: 18px;
+text-align: left;
+
 }
 }
 </style>
@@ -58,8 +80,8 @@ width: 100%;
 
 <div class="header" style="padding:15px;text-align:center;" >
 <marquee behavior="" direction="">Welcome to Preposition class</marquee>
-<img src="gif1.gif" alt="">
-<img src="engGIF.gif" style="float: right;" alt="">
+<img class="pic" src="gif1.gif" alt="">
+<img class="pic" src="engGIF.gif" style="float: right;" alt="">
 
 <h1>Pre-Position (পূর্বে - অবস্থান)</h1>
 <audio src="prepaudio.mp3" controls></audio>
@@ -82,7 +104,7 @@ width: 100%;
 
 
 
-<button type="button" class="collapsible"><pre>Since (হতে / থেকে)-----For (ধরে / যাবত)-----Till / Untill (পর্যন্ত)   </pre></button>
+<button type="button" class="collapsible">Since (হতে / থেকে)-----For (ধরে / যাবত)-----Till / Untill (পর্যন্ত)</button>
 <div class="content">
 <p>
 <h5>Examples</h5>
@@ -91,15 +113,17 @@ I am living here since 2010 (Present) <br> <br>
 I will have been living here till 2022 (Future) <br>
 </p>
 </div>
-<button type="button" class="collapsible"><pre>On (পিঠে চড়া) & By (ভিতরে চড়া) ➡️   [ যানবাহনের ক্ষেত্রে ]</pre></button>
+<button type="button" class="collapsible">On (পিঠে চড়া) & By (ভিতরে চড়া) ➡️   [ যানবাহনের ক্ষেত্রে ]</button>
 <div class="content">
-<p><h5>Examples</h5>
+<h5>Examples</h5>
+<p>
 On bike / On rikshaw / On horse <br><br>
 By bus / By train <br> <br>
 </p>
 </div>
-<button type="button" class="collapsible"><pre><b>At / On </b>(এর ব্যাবহার)</pre></button>
-<div class="content">
+<button type="button" class="collapsible"><b>At / On </b>(এর ব্যাবহার)</button>
+<div class="content" style="overflow-x:auto;">
+    
 <table>
 <h5>Examples For Preposition <b>At</b></h5>
 <tr>
@@ -138,8 +162,8 @@ By bus / By train <br> <br>
 </tr>
 </table>
 </div>
-<button type="button" class="collapsible"><pre><b>IN</b> (এর ব্যাবহার)</pre></button>
-<div class="content">
+<button type="button" class="collapsible"><b>IN</b> (এর ব্যাবহার)</button>
+<div class="content" style="overflow-x:auto;">
 <h5>Examples For Preposition <b>(IN)</b </h5>
 <table>
 <tr>
@@ -169,7 +193,7 @@ By bus / By train <br> <br>
 </tr> -->
 </table>
 </div>
-<button type="button" class="collapsible"><pre>By / With ➡️  (কাজ করার ক্ষেত্রে)</pre></button>
+<button type="button" class="collapsible">By / With ➡️  (কাজ করার ক্ষেত্রে)</button>
 <div class="content">
 <pre>
 By   = যে বাক্তি কাজটি করে। 
@@ -182,104 +206,107 @@ With = যে জিনিস বা বস্তু দ্বারা কা�
 
 
 </div>
-<button type="button" class="collapsible"><pre>Along / Along with</pre></button>
+<button type="button" class="collapsible">Along / Along with</button>
 <div class="content">
 <pre>
 <li>Along      - <strong>One direction</strong></li>
 <li>Along with - <strong>Two directions</strong></li>
 </pre>
 <h5>Examples : </h5>
+<p>
 <input type="radio" name="" id="">I was walk <u>along.</u>
 
-<input type="radio" name="" id="">The children walked<u>along with</u>her mother.
-</div>
-<button type="button" class="collapsible"><pre>এসব Word এর পর To বসে।</pre></button>
-<div class="content">
+</p><br>
 <p>
-    <li>Admit</li>
+<input type="radio" name="" id="">The children walked <u>along</u> with her mother.
 
-    <li>Plan</li>
-
-    <li>Choose</li>
-
-    <li>Intend</li>
-
-    <li>Offer</li>
-
-    <li>Mean</li>
-
-    <li>Propose</li>
-
-    <li>Refuse</li>
-
-    <li>Hope</li>
-
-    <li>Marry</li>
-
-    <li>Agree</li>
-
-    <li>Encourage</li>
-
-    <li>Need</li>
-
-    <li>Deserve</li>
-
-    <li>Learn</li>
-
-    <li>Want</li>
-
-    <li>Pretend</li>
-
-    <li>Fail</li>
-
-    <li>Stick</li>
-    
 </p>
 </div>
-<button type="button" class="collapsible"><pre>Group Verb(s)</pre></button>
+<button type="button" class="collapsible">এসব Word এর পর To বসে।</button>
 <div class="content">
 <p>
-    <pre>
-        <input type="checkbox" name="" id=""> Look for        - খোঁজা।
+<li>Admit</li>
 
-        <input type="checkbox" name="" id=""> Look at         - তাকানো।
+<li>Plan</li>
 
-        <input type="checkbox" name="" id=""> Look down upon  - ঘৃণা করা।
+<li>Choose</li>
 
-        <input type="checkbox" name="" id=""> Look after      - দেখাশোনা করা।
+<li>Intend</li>
 
-        <input type="checkbox" name="" id=""> Look into       - অনুসন্ধান করা।
+<li>Offer</li>
 
-        <input type="checkbox" name="" id=""> Look up         - খুঁজে দেখা।
+<li>Mean</li>
 
-        <input type="checkbox" name="" id=""> Look forward to - সামনে দেখা। <br> <hr>
+<li>Propose</li>
 
-        <input type="checkbox" name="" id=""> Die             - মারা যাওয়া।
+<li>Refuse</li>
 
-        <input type="checkbox" name="" id=""> Die of          - রোগে মারা যাওয়া। (Covid, cancer)
+<li>Hope</li>
 
-        <input type="checkbox" name="" id=""> Die by          - আত্মহত্যা করে মারা গেলে।
+<li>Marry</li>
 
-        <input type="checkbox" name="" id=""> Die for         - দেশ বা বৃহৎ উদ্দেশে মারা গেলে। (Country)
+<li>Agree</li>
 
-        <input type="checkbox" name="" id=""> Die in          - যুদ্ধ ,অভাব , accident এ মারা গেলে।
+<li>Encourage</li>
 
-        <input type="checkbox" name="" id=""> Die off         - হঠাৎ করে একা মারা গেলে।
+<li>Need</li>
 
-        <input type="checkbox" name="" id=""> Die down        - তীব্রতা কমে গেলে। [ বস্তুর ক্ষেত্রে]
+<li>Deserve</li>
 
-        <input type="checkbox" name="" id=""> Die out         - বিলুপ্ত বোঝালে। <br><hr>
+<li>Learn</li>
 
-        <input type="checkbox" name="" id=""> Made            - তৈরি করা।
+<li>Want</li>
 
-        <input type="checkbox" name="" id=""> Made of         - উপাদান বোঝা যাবে। 
+<li>Pretend</li>
 
-        <input type="checkbox" name="" id=""> Made from       - উপাদান বোঝা যাবে না।
+<li>Fail</li>
 
-        <input type="checkbox" name="" id=""> Made by         - কোম্পানির নাম। 
+<li>Stick</li>
 
-        <input type="checkbox" name="" id=""> Made in         - স্থানের নাম।
-    </pre>
+</p>
+</div>
+<button type="button" class="collapsible">Group Verb(s)</button>
+<div class="content">
+<p>
+<input type="checkbox" name="" id=""> Look for        - খোঁজা। <br><br>
+
+<input type="checkbox" name="" id=""> Look at         - তাকানো।<br><br>
+
+<input type="checkbox" name="" id=""> Look down upon  - ঘৃণা করা।<br><br>
+
+<input type="checkbox" name="" id=""> Look after      - দেখাশোনা করা।<br><br>
+
+<input type="checkbox" name="" id=""> Look into       - অনুসন্ধান করা।<br><br>
+
+<input type="checkbox" name="" id=""> Look up         - খুঁজে দেখা।<br><br>
+
+<input type="checkbox" name="" id=""> Look forward to - সামনে দেখা। <br> <hr><br><br>
+
+<input type="checkbox" name="" id=""> Die             - মারা যাওয়া।<br><br>
+
+<input type="checkbox" name="" id=""> Die of          - রোগে মারা যাওয়া। (Covid, cancer)<br><br>
+
+<input type="checkbox" name="" id=""> Die by          - আত্মহত্যা করে মারা গেলে।<br><br>
+
+<input type="checkbox" name="" id=""> Die for         - দেশ বা বৃহৎ উদ্দেশে মারা গেলে। (Country)<br><br>
+
+<input type="checkbox" name="" id=""> Die in          - যুদ্ধ ,অভাব , accident এ মারা গেলে।<br><br>
+
+<input type="checkbox" name="" id=""> Die off         - হঠাৎ করে একা মারা গেলে।<br><br>
+
+<input type="checkbox" name="" id=""> Die down        - তীব্রতা কমে গেলে। [ বস্তুর ক্ষেত্রে]<br><br>
+
+<input type="checkbox" name="" id=""> Die out         - বিলুপ্ত বোঝালে। <br><br><hr>
+
+<input type="checkbox" name="" id=""> Made            - তৈরি করা।<br><br>
+
+<input type="checkbox" name="" id=""> Made of         - উপাদান বোঝা যাবে। <br><br>
+
+<input type="checkbox" name="" id=""> Made from       - উপাদান বোঝা যাবে না।<br><br>
+
+<input type="checkbox" name="" id=""> Made by         - কোম্পানির নাম। <br><br>
+
+<input type="checkbox" name="" id=""> Made in         - স্থানের নাম।
 </p>
 </div>
 <button type="button" class="collapsible">Open Section 1</button>
@@ -293,7 +320,7 @@ With = যে জিনিস বা বস্তু দ্বারা কা�
 </div>
 
 <div class="right">
-<a href="https://dictionary.cambridge.org/pronunciation/english/preposition" target="_blank">Pronunciation</a>
+<a href="https://dictionary.cambridge.org/pronunciation/english/preposition" target="_blank">Pronunciation</a><br><br>
 <a href="https://vocapp.com/prepositions-flashcards-95141#">Pronunciation-Details</a>
 
 
